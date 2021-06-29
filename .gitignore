@@ -1,0 +1,5 @@
+/node_modules
+/logs
+.env
+*nyc_output
+package-lock.json

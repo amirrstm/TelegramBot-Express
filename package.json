@@ -1,0 +1,36 @@
+{
+  "name": "telegram_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start ecosystem.config.json --no-daemon",
+    "dev": "cross-env NODE_ENV=development nodemon src/index.js",
+    "develop": "cross-env NODE_ENV=development node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.2",
+    "helmet": "^4.5.0",
+    "http-status": "^1.5.0",
+    "joi": "^17.4.0",
+    "moment-jalaali": "^0.9.2",
+    "mongoose": "^5.12.5",
+    "numeral": "^2.0.6",
+    "telebot": "^1.4.1",
+    "telegraf": "^4.3.0",
+    "telegraf-stateless-question": "^2.0.1",
+    "validator": "^13.6.0",
+    "winston": "^3.3.3",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
